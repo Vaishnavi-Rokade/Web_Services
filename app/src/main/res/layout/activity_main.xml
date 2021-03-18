@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_Retrofit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retrofit" />
+
+    <Button
+        android:id="@+id/btn_Volly"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_toEndOf="@id/btn_Retrofit"
+        android:layout_height="wrap_content"
+        android:text="Volly"
+        android:layout_toRightOf="@id/btn_Retrofit" />
+
+    <Button
+        android:id="@+id/btn_Http"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@id/btn_Volly"
+        android:text="Okhttp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/btn_Volly"
+        android:layout_marginTop="30dp"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</RelativeLayout>
